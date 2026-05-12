@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0D0D0D;
+  --paper: #F5F2EB;
+  --cream: #EDE9E0;
+  --accent: #C8501A;
+  --accent-light: #E8724A;
+  --muted: #8A8070;
+  --border: #D9D4C8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Grain overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+.card {
+  @apply bg-white border border-border rounded-2xl;
+}
+
+.btn-primary {
+  @apply bg-ink text-paper font-display font-semibold px-6 py-2.5 rounded-xl hover:bg-accent transition-all duration-200 text-sm tracking-wide;
+}
+
+.btn-secondary {
+  @apply bg-transparent text-ink font-display font-medium px-5 py-2.5 rounded-xl border border-border hover:border-ink transition-all duration-200 text-sm;
+}
+
+.btn-danger {
+  @apply bg-transparent text-red-500 font-display font-medium px-5 py-2.5 rounded-xl border border-red-200 hover:bg-red-50 transition-all duration-200 text-sm;
+}
+
+.input {
+  @apply w-full bg-cream border border-border rounded-xl px-4 py-2.5 text-ink placeholder-muted focus:outline-none focus:border-ink transition-colors duration-200 text-sm font-body;
+}
+
+.tag {
+  @apply inline-flex items-center gap-1 bg-cream text-muted text-xs font-mono px-2.5 py-1 rounded-lg border border-border;
+}
+
+.tag-accent {
+  @apply inline-flex items-center gap-1 bg-accent/10 text-accent text-xs font-mono px-2.5 py-1 rounded-lg;
+}
