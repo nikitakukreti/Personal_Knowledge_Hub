@@ -4,7 +4,7 @@ A full-stack web application to save, organize, and search your personal knowled
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
