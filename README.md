@@ -1,4 +1,4 @@
-# 📚 Personal Knowledge Hub
+#  Personal Knowledge Hub
 
 A full-stack web application to save, organize, and search your personal knowledge resources — articles, videos, links, and more.
 
@@ -15,7 +15,7 @@ A full-stack web application to save, organize, and search your personal knowled
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.9+
@@ -72,7 +72,7 @@ The app will be live at: **http://localhost:3000**
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 knowledge-hub/
@@ -132,20 +132,20 @@ knowledge-hub/
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 **JWT Authentication** — Signup, login, protected routes
-- 📦 **Full CRUD** — Create, read, update, delete resources
-- 🔍 **Search** — Search resources by title (debounced)
-- 🏷️ **Tag Filtering** — Filter by one or multiple tags
-- 🎨 **Grid / List View** — Toggle between layouts
-- 📱 **Responsive** — Works on mobile and desktop
-- ⚡ **Optimistic UX** — Loading states and error handling throughout
-- 🌙 **Distinctive Design** — Syne + DM Sans typography, warm paper tones
+-  **JWT Authentication** — Signup, login, protected routes
+-  **Full CRUD** — Create, read, update, delete resources
+-  **Search** — Search resources by title (debounced)
+-  **Tag Filtering** — Filter by one or multiple tags
+-  **Grid / List View** — Toggle between layouts
+-  **Responsive** — Works on mobile and desktop
+-  **Optimistic UX** — Loading states and error handling throughout
+-  **Distinctive Design** — Syne + DM Sans typography, warm paper tones
 
 ---
 
-## 🚢 Deployment
+##  Deployment
 
 ### Backend (e.g. Railway / Render)
 1. Set `SECRET_KEY` environment variable to a long random string
@@ -158,7 +158,7 @@ knowledge-hub/
 
 ---
 
-## 🔒 Security Notes
+##  Security Notes
 
 - Change `SECRET_KEY` in `auth.py` before deploying to production
 - Use PostgreSQL instead of SQLite for production
